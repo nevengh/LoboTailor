@@ -6,6 +6,11 @@
 /* FeaturedCollection */
 .FeaturedCollection{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .FeaturedCollection_Title{
     font-family: var(--text-font);
@@ -24,4 +29,21 @@
     flex-wrap: wrap;
     margin-top: 50px;
     padding: 10px 15px;
+}
+.AllProductBtn{
+    margin-top: 40px;
+}
+.AllProductBtn a {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    padding: 14px 35px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.AllProductBtn a:hover {
+    color: #000;
+    background: #fff;
+    border-color: #000;
 }

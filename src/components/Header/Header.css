@@ -4,7 +4,25 @@
   width: 100%;
   transition: background-color 0.3s ease; /* Smooth transition */
 }
-
+.rightSideNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.rightSideNav select{
+  background: transparent;
+  border: 1px solid #fafafa;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.rightSideNav select option{
+  background:transparent;
+  border: 1px solid #fafafa;
+  color: #fff;
+  cursor: pointer;
+}
 /* Background color for scrolled state */
 .Header.scrolled {
   background: linear-gradient(90deg, #a0a7ad, #314252, #c1c1c1);
@@ -31,7 +49,7 @@
   }
 
   .appointment-button {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding: 8px 16px;
     color: #333;
     background-color: #fff;

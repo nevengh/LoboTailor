@@ -2,15 +2,23 @@ import { useState, useEffect } from 'react';
 import './Header.css';
 import logo from '../../assets/logoblack2.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { useLanguage } from '../../LanguageContextType';
+import ar from '../../locales/ar';
+import en from '../../locales/en';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const{language,setLanguage}=useLanguage();
+  const translations = language === "en" ? en : ar;
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setLanguage(e.target.value as "en" | "ar");
+    setIsMenuOpen(false);
+  };
   useEffect(() => {
     const handleScroll = () => {
       // Check if the page has been scrolled more than 50px
@@ -37,20 +45,30 @@ const Header = () => {
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        <a href="#appointment" className="appointment-button">Appointment</a>
+        <div className="rightSideNav">
+        <a href="#appointment" className="appointment-button">{translations.Appointment}</a>
         <div className="burger-menu-icon" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        <select
+            className="languageSelect"
+            onChange={handleLanguageChange}
+            value={language}
+          >
+            <option value="en">{translations.English}</option>
+            <option value="ar">{translations.Arabic}</option>
+        </select>
         </div>
       </div>
       
       <div className={`ne-navbar ${isMenuOpen ? 'show-menu' : ''}`}>
         <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#templates">Templates</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><Link to="/">{translations.Home}</Link></li>
+          <li><Link to="/about">{translations.About}</Link></li>
+          <li><Link to="/contact">{translations.contactUs}</Link></li>
+          {/* <li><a href="#blog">Blog</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li> */}
         </ul>
       </div>
     </div>
