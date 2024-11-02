@@ -6,7 +6,9 @@ import './Home.css'
 import { useLanguage } from '../../LanguageContextType'
 import ar from '../../locales/ar'
 import en from '../../locales/en'
-
+import ProductCard from '../../components/ProductCard/ProductCard'
+import product from "../../assets/product1.jpg";
+import lobo from '../../assets/lobo 29 jan.webm'
 const Home = () => {
   const{language}=useLanguage();
   const translations = language === "en" ? en : ar;
@@ -31,6 +33,23 @@ const Home = () => {
             <Link to='/AllProduct'>{translations.AllProduct}</Link>
           </div>
         </div>
+
+          {/* Video Section */}
+          <div className="videoLobo">
+            <video src={lobo} autoPlay controls />
+            
+          </div>
+
+
+        {/* Product */}
+      <div className="Product-Home">
+        <div className="Product-container">
+          <ProductCard ProductKind="Shirts" productImg={product} />
+          <ProductCard ProductKind="Shirts" productImg={product} />
+          <ProductCard ProductKind="Shirts" productImg={product} />
+          <ProductCard ProductKind="Shirts" productImg={product} />
+        </div>
+      </div>
     </div>
   )
 }

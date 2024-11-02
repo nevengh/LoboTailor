@@ -1,0 +1,67 @@
+.first-about,.third-about{
+    width: 100%;
+    height: 80vh;
+    background-image: url(../../assets/About-2240x1400.jpg);
+    background-size: cover;
+    
+    position: relative;
+}
+.About_container{
+    margin-top: 40px;
+}
+.first-about-content{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    /* border: 1px solid red; */
+}
+.third-about{
+    height: 60vh;
+    background-image: url(../../assets/spools-thread-basic-sewing-tools-including-needles-tape-measure-thimble-checkered-background.jpg);
+}
+.third-about-content{
+    position: absolute;
+    right: 5%;
+    top: 1%;
+}
+.first-about-content h2,.second_about h2,.third-about-content h2{
+    font-size: 38px;
+    font-family: var(--text-font);
+}
+.third-about-content h2{
+    color: #fff;
+}
+.first-about-content p,.third-about-content p{
+    font-family: var(--heading-font);
+    /* font-weight: 600; */
+    max-width: 550px;
+    font-size: 25px;
+}
+.third-about-content p{
+    color: #f6f6f6;
+}
+.second_about{
+    width: 80%;
+    margin: 30px auto;
+}
+.second_about h2{
+    text-align: center;
+    font-family: var(--heading-font);
+}
+.second_about p{
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 18px;
+    width: 70%;
+    margin: 15px auto;
+}
+@media(max-width:540px){
+.first-about{
+    background-position: right;
+}
+.first-about-content{
+    padding: 5px;
+    background: #f6f6f6;
+    left: 0;
+}
+}

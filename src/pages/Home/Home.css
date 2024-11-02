@@ -21,7 +21,7 @@
     text-transform: uppercase;
 
 }
-.FeaturedCollection_Container{
+.FeaturedCollection_Container,.Product-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +46,44 @@
     color: #000;
     background: #fff;
     border-color: #000;
+}
+/* videoLobo */
+.videoLobo {
+    position: relative;
+    margin-top: 40px;
+    background-image: url(../../assets/fashion-designer-is-cutting-off-fabric-with-scissors-he-is-wearing-denim-closeup-photo-shoot.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Ensure pseudo-element stays within bounds */
+}
+
+.videoLobo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.575); /* Adjust opacity as needed */
+    z-index: 1; /* Overlay sits above the background image */
+}
+.videoLobo video{
+    position: absolute;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Product */
+.Product-Home{
+    background-color: #f6f6f6;
+    padding: 20px;
+    margin-top: 20px;
 }
