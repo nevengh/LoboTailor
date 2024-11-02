@@ -1,0 +1,138 @@
+.ProductProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.ProductProfile_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.ProductProfile_Card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ProductProfile_Card_collection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+    width: 120px;
+}
+
+.ProductProfile_Card_collection img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ProductProfile_Card_collection img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ProductProfile_image_holder {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ProductProfile_image_holder img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.ProductProfile_Info {
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ProductProfile_Info h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ProductProfile_Info p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.ProductProfile_Info .product_text {
+    color: #666;
+    font-style: italic;
+}
+
+.read_more {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.ne-product-number{
+    font-family: var(--text-font);
+    letter-spacing: .4rem;
+    line-height: 32px;
+    text-align: center;
+}
+.product_text_1,.product_text_2{
+    width: 80%;
+    margin:15px auto;
+    font-family: var(--text-font);
+    line-height: 32px;
+    text-align: center;
+}
+.ProductProfile_Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.EnquireNow{
+    /* width: 100px; */
+    height: 44;
+    margin: 20px auto;
+    text-align: center;
+    background: #000;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: var(--text-font);
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.BooKAppoitment{
+    text-decoration: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    height: 44px;
+    text-decoration: none;
+    color: #000;
+    font-family: var(--text-font);
+    border: 1px solid #000;
+}

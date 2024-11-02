@@ -1,0 +1,27 @@
+.ne_Home{
+    width: 100%;
+}
+
+
+/* FeaturedCollection */
+.FeaturedCollection{
+    margin-top: 50px;
+}
+.FeaturedCollection_Title{
+    font-family: var(--text-font);
+    text-align: center;
+    font-size: 24px;
+    
+    letter-spacing: .2em;
+    text-transform: uppercase;
+
+}
+.FeaturedCollection_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 10px 15px;
+}

@@ -1,0 +1,117 @@
+.Header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Background color for scrolled state */
+.Header.scrolled {
+  background: linear-gradient(90deg, #a0a7ad, #314252, #c1c1c1);
+}
+.logo img{
+    background-color: #fafafa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.508);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.topBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.3rem;
+    border-bottom: 1px solid #fafafa;
+}
+.social-icons a {
+    color: #fafafa;
+    margin: 0 5px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .appointment-button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 22px;
+    transition: color 0.8s ease, text-underline-offset 0.8s ease;
+  }
+  .nav-links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+
+  }
+  .ne-navbar{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.508);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    padding: 15px 0;
+  }
+  .burger-menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #fafafa;
+    cursor: pointer;
+  }
+
+  @media(max-width:600px){
+    .social-icons,.appointment-button{
+      display: none;
+    }
+    .burger-menu-icon {
+      display: block;
+    }
+  
+    .ne-navbar {
+      position: fixed;
+      top: 8%;
+      right: -100%; /* Start off-screen */
+      width: 60%;
+      height: 80vh;
+      background: linear-gradient(135deg,rgb(107, 107, 242) 0%,rgb(40,116,252) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: right 0.3s ease;
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+  
+    .ne-navbar.show-menu {
+      right: 0; /* Slide in from the right */
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+    
+  }

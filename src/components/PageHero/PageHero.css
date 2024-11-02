@@ -1,0 +1,9 @@
+.PageHero{
+    width: 100%;
+    height: 60vh;
+}
+.PageHero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

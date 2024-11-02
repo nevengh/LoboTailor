@@ -1,0 +1,27 @@
+.Hero{
+    background: red;
+    height: 100vh;
+    width: 100%;
+}
+.carousel-control-next-icon ,.carousel-control-prev-icon{
+    display: none;
+}
+.carousel-item{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-caption{
+    bottom: 12.2rem;
+    background-color: #fafafa6a;
+    border-radius: 5px;
+    color: #000;
+}
+
+@media(max-width:600px){
+
+}
