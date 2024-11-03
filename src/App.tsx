@@ -6,6 +6,7 @@ import ProductProfile from './pages/ProductProfile/ProductProfile'
 import { LanguageProvider } from './LanguageContextType'
 import AboutUs from './pages/AboutUs/AboutUs'
 import AllProduct from './pages/AllProduct/AllProduct'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Route  path='/AllProduct' element={<AllProduct/>}  />
         <Route path='/product/:id' element={<ProductProfile/>} />
       </Routes>
-      
+      <Footer/>
       </BrowserRouter>
       </LanguageProvider>
     </div>

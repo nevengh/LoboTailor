@@ -40,3 +40,9 @@
     border:  1px solid #fff;
     transition: .5s ease-in-out;
 }
+
+@media(max-width:500px){
+    .product-card{
+        max-width: 380px;
+    }
+}

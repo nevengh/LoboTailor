@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 9999;
   width: 100%;
+  /* background: #fff; */
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 .rightSideNav{
@@ -12,20 +13,20 @@
 }
 .rightSideNav select{
   background: transparent;
-  border: 1px solid #fafafa;
+  border: 1px solid #000;
   padding: 8px 16px;
-  color: #fff;
+  color: #000;
   cursor: pointer;
 }
 .rightSideNav select option{
   background:transparent;
-  border: 1px solid #fafafa;
-  color: #fff;
+  border: 1px solid #000;
+  color: #000;
   cursor: pointer;
 }
 /* Background color for scrolled state */
 .Header.scrolled {
-  background: linear-gradient(90deg, #a0a7ad, #314252, #c1c1c1);
+  background: linear-gradient(90deg, #a0a7ad, #e3e3e5ab, #c1c1c1);
 }
 .logo img{
     background-color: #fafafa;
@@ -42,7 +43,7 @@
     border-bottom: 1px solid #fafafa;
 }
 .social-icons a {
-    color: #fafafa;
+    color: #000;
     margin: 0 5px;
     font-size: 18px;
     text-decoration: none;
@@ -51,11 +52,12 @@
   .appointment-button {
     /* margin-left: 20px; */
     padding: 8px 16px;
-    color: #333;
-    background-color: #fff;
-    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: var(--text-font);
   }
 
   .nav-links {
@@ -70,7 +72,7 @@
   }
   
   .nav-links a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-family: var(--text-font);
     font-size: 22px;

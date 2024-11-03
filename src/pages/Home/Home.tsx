@@ -9,6 +9,8 @@ import en from '../../locales/en'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import product from "../../assets/product1.jpg";
 import lobo from '../../assets/lobo 29 jan.webm'
+import FooterTopBaaner from "../../components/FooterTopBaaner/FooterTopBaaner";
+import footer from '../../assets/hands-manufacturing-clothes-close-up.jpg'
 const Home = () => {
   const{language}=useLanguage();
   const translations = language === "en" ? en : ar;
@@ -50,6 +52,7 @@ const Home = () => {
           <ProductCard ProductKind="Shirts" productImg={product} />
         </div>
       </div>
+      <FooterTopBaaner footertext="Your Vision, Our Precision" footerheading="Book your Appointment Now" footerimg={footer} />
     </div>
   )
 }

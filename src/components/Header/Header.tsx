@@ -47,9 +47,6 @@ const Header = () => {
         </div>
         <div className="rightSideNav">
         <a href="#appointment" className="appointment-button">{translations.Appointment}</a>
-        <div className="burger-menu-icon" onClick={toggleMenu}>
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
-        </div>
         <select
             className="languageSelect"
             onChange={handleLanguageChange}
@@ -58,6 +55,9 @@ const Header = () => {
             <option value="en">{translations.English}</option>
             <option value="ar">{translations.Arabic}</option>
         </select>
+        </div>
+        <div className="burger-menu-icon" onClick={toggleMenu}>
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
       

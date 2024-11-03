@@ -6,7 +6,7 @@ import './AllProduct.css'
 const AllProduct = () => {
   return (
     <div className='AllProductPage'>
-      <PageHero/>
+      <PageHero PageName='All Product'/>
       <div className="AllProductPage_Container">
       {FeatureCard.map((items) => (
             <FeaturedCard

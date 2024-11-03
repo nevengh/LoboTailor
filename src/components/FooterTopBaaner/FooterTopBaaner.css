@@ -1,0 +1,52 @@
+.Footer_topBanner{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    /* background-image: url(../../assets/hands-manufacturing-clothes-close-up.jpg);
+    background-position: center;
+    background-size: cover; */
+}
+.Footer_topBanner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Footer_topBanner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+.Footer_topBanner_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Footer_topBanner_content h2,.Footer_topBanner_content p{
+    color: #fff;
+    font-size: 45px;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+.Footer_topBanner_content p{
+    font-size: 20px;
+    font-family: var(--text-font);
+}
+.Footer_topBanner_content .BooKAppoitment{
+    background: #fff;
+    border: none;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
+    width: max-content;
+}
+.Footer_topBanner_content .BooKAppoitment:hover{
+    background-color: #cbc9c9;
+}

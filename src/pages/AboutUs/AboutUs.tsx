@@ -1,10 +1,62 @@
+import AboutUsCard from "../../components/AboutUsCard/AboutUsCard";
 import PageHero from "../../components/PageHero/PageHero";
 import "./AboutUs.css";
-
+import clients from "../../assets/games_826262.svg";
+import design from "../../assets/fashion-design_2586715.svg";
+import samples from "../../assets/pantone_8153462.svg";
+import factory from "../../assets/sewing-machine_3048409.svg";
+import deleviry from "../../assets/delivery_7903296.svg";
+import fitting from "../../assets/tailoring_17944596.svg";
+import FooterTopBaaner from "../../components/FooterTopBaaner/FooterTopBaaner";
+import footer from '../../assets/clothing-workshop-with-material.jpg'
 const AboutUs = () => {
+  const Cards = [
+    {
+      id: 1,
+      img_url: clients,
+      headingCard: "Meeting Clients",
+      CArdtext:
+        "Our first meeting with the client usually covers the concept of the project, the timeline, specific requirements and a discussion to make the project a success. We listen closely to your requirements, focus on the priorities and ensure every detail is covered",
+    },
+    {
+      id: 2,
+      img_url: design,
+      headingCard: "Design",
+      CArdtext:
+        "The design team at LOBO Tailors are on hand to advice on fabric suitability and design practicalities for the individual roles required. Illustrations are produced along with fabric swatches to give a first view of the new look before the sampling process begins. This gives the client a chance to review and make any changes at an early stage",
+    },
+    {
+      id: 3,
+      img_url: samples,
+      headingCard: "Samples",
+      CArdtext:
+        "Our design team will then start on patterns, sourcing trims, cutting and making the samples. We believe that by having the same people both drawing and making the samples, nothing will get lost in translation, and that the samples will truly reflect what was drawn and approved",
+    },
+    {
+      id: 4,
+      img_url: fitting,
+      headingCard: "Fitting",
+      CArdtext:
+        "Our garment technologist makes sure the best fit is achieved. We offer three fitting services: Standardized, made-to-measure and bespoke. We also conduct ‘wearer trials’, with members of staff having the opportunity to wear the samples while working, and giving us feedback or any suggestions for final refinement",
+    },
+    {
+      id: 5,
+      img_url: factory,
+      headingCard: "Manufacturing",
+      CArdtext:
+        "LOBO Tailors has 8000 sq. ft. factory well equipped with modern machinery and an in-house professional tailor count of 200 plus. Our Turn Around Time is 3 weeks on the higher side from the day of measurements. All our garments are handmade, be it at a large scale or small scal",
+    },
+    {
+      id: 6,
+      img_url: deleviry,
+      headingCard: "Delivery",
+      CArdtext:
+        "Bulk deliveries to single or multiple locations, or individual man-packs are sent from one of our two warehouses based out in DIP and Al Rashidiya. We also have our own fleet for timely deliveries and more personal service as and when the situation arises. For our international customers, we ship the uniforms by Air",
+    },
+  ];
   return (
     <div className="AboutUs">
-      <PageHero />
+      <PageHero PageName="About US" />
       <div className="About_container">
         <div className="first-about">
           <div className="first-about-content">
@@ -51,7 +103,18 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
+        <div className="About_Card_container">
+          {Cards.map((items) => (
+            <AboutUsCard
+              key={items.id}
+              CArdtext={items.CArdtext}
+              headingCard={items.headingCard}
+              img_url={items.img_url}
+            />
+          ))}
+        </div>
       </div>
+      <FooterTopBaaner footerheading="Crafting Timeless Elegance, One Stitch at a Time" footerimg={footer} footertext="Discover bespoke tailoring that blends tradition with innovation for an impeccable fit." />
     </div>
   );
 };

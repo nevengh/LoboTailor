@@ -55,6 +55,15 @@
     width: 70%;
     margin: 15px auto;
 }
+.About_Card_container{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 @media(max-width:540px){
 .first-about{
     background-position: right;
@@ -64,4 +73,23 @@
     background: #f6f6f6;
     left: 0;
 }
+.second_about p,.second_about{
+    width: 100%;
+}
+.third-about-content{
+    padding: 5px;
+    background: rgba(0,0,0,.6);
+    right: 0;
+    top: 15%;
+}
+.third-about-content p{
+    font-size: 16px;
+    text-align: center;
+}
+.third-about-content h2{
+
+    text-align: center;
+}
+
+
 }

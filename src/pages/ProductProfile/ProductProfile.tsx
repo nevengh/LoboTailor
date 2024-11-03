@@ -40,7 +40,7 @@ const ProductProfile = () => {
 
     return (
         <div className='ProductProfile'>
-            <PageHero />
+            <PageHero PageName={product?.card_info_head}/>
             <div className="ProductProfile_Container">
                 <div className="ProductProfile_Card">
                     <div className="ProductProfile_Card_collection">
