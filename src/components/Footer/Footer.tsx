@@ -59,11 +59,11 @@ const Footer = () => {
       </div>
       <div className="Footer_copyWriter">
       <div className="social-icons-footer">
-          <a href="#"><i className="fab fa-facebook"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-linkedin"></i></a>
-          <a href="#"><i className="fab fa-youtube"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="#" target='_blank'><i className="fab fa-facebook"></i></a>
+          <a href="#"target='_blank'><i className="fab fa-twitter"></i></a>
+          <a href="#"target='_blank'><i className="fab fa-linkedin"></i></a>
+          <a href="#"target='_blank'><i className="fab fa-youtube"></i></a>
+          <a href="#"target='_blank'><i className="fab fa-instagram"></i></a>
         </div>
         <p className="copytext">© 2024 Lobo Tailors</p>
       </div>

@@ -26,7 +26,7 @@
 }
 /* Background color for scrolled state */
 .Header.scrolled {
-  background: linear-gradient(90deg, #a0a7ad, #e3e3e5ab, #c1c1c1);
+  background: linear-gradient(90deg, #a0a7ad, #3f3f3fab, #c1c1c1);
 }
 .logo img{
     background-color: #fafafa;
@@ -43,7 +43,7 @@
     border-bottom: 1px solid #fafafa;
 }
 .social-icons a {
-    color: #000;
+    color: #fff;
     margin: 0 5px;
     font-size: 18px;
     text-decoration: none;
@@ -52,8 +52,8 @@
   .appointment-button {
     /* margin-left: 20px; */
     padding: 8px 16px;
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
     border-radius: 3px;
     text-decoration: none;
     /* font-weight: bold; */
@@ -72,7 +72,7 @@
   }
   
   .nav-links a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-family: var(--text-font);
     font-size: 22px;

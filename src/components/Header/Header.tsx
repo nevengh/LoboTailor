@@ -36,11 +36,11 @@ const Header = () => {
     <div className={`Header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="topBanner">
         <div className="social-icons">
-          <a href="#"><i className="fab fa-facebook"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-linkedin"></i></a>
-          <a href="#"><i className="fab fa-youtube"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/lobotailor.ae/friends_likes" target='_blank'><i className="fab fa-facebook"></i></a>
+          <a href="#" target='_blank'><i className="fab fa-twitter"></i></a>
+          <a href="#" target='_blank'><i className="fab fa-linkedin"></i></a>
+          <a href="#"target='_blank'><i className="fab fa-youtube"></i></a>
+          <a href="#" target='_blank'><i className="fab fa-instagram"></i></a>
         </div>
         <div className="logo">
           <img src={logo} alt="Logo" />

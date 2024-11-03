@@ -8,7 +8,8 @@ import factory from "../../assets/sewing-machine_3048409.svg";
 import deleviry from "../../assets/delivery_7903296.svg";
 import fitting from "../../assets/tailoring_17944596.svg";
 import FooterTopBaaner from "../../components/FooterTopBaaner/FooterTopBaaner";
-import footer from '../../assets/clothing-workshop-with-material.jpg'
+import footer from '../../assets/business-urban-beautiful-landscape-night.avif'
+import heroAbout from '../../assets/close-up-smiling-male-tailor-shaking-hand-with-senior-customer.avif'
 const AboutUs = () => {
   const Cards = [
     {
@@ -56,7 +57,7 @@ const AboutUs = () => {
   ];
   return (
     <div className="AboutUs">
-      <PageHero PageName="About US" />
+      <PageHero PageName="About US" heroImg={heroAbout}/>
       <div className="About_container">
         <div className="first-about">
           <div className="first-about-content">

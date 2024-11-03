@@ -1,0 +1,73 @@
+.ContactUs_Container{
+    padding: 10px 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+.Form{
+    width: 800px;
+}
+.Form .fullName input{
+    width: 100%;
+    margin-left: 5px;
+}
+label{
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+input{
+    height: 44px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #1b1b11;
+    padding: 5px;
+    font-size: 14px;
+    font-family: var(--text-font);
+}
+input:focus{
+    border: 1px solid #000;
+    outline: none;
+}
+.PhoneNumber input ,.Email input,.Message textarea{
+    width: 100%;
+}
+.Message textarea{
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    resize: none;
+    padding: 20px 10px;
+}
+.Message textarea:focus{
+    border: 1px solid #000;
+    outline: none;
+    
+}
+.ContactUs h2{
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+    font-size: 45px;
+}
+.ContactUs a{
+    text-decoration: none;
+    color: #8d8b8b;
+    font-family: var(--text-font);
+}
+.OurStors{
+    flex-wrap: wrap;
+}
+
+@media(max-width:1067px){
+    .ContactDetails{
+        margin-top: 30px;
+       display: flex;
+       justify-content: space-between;
+       /* align-items: center; */
+       gap: 50px; 
+       flex-wrap: wrap;
+    }
+}

@@ -1,12 +1,13 @@
 import './PageHero.css'
-import hero from '../../assets/hands-manufacturing-clothes-close-up.jpg'
+
 interface PageHeroProps{
-  PageName:string|undefined
+  PageName:string|undefined;
+  heroImg:string;
 }
-const PageHero:React.FC<PageHeroProps> = ({PageName}) => {
+const PageHero:React.FC<PageHeroProps> = ({PageName,heroImg}) => {
   return (
     <div className='PageHero'>
-        <img src={hero} alt="" />
+        <img src={heroImg} alt="" />
         <h2>{PageName}</h2>
     </div>
   )

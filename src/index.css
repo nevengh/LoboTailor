@@ -19,7 +19,25 @@ ul{
   --heading-font: 'Futura', sans-serif; 
   --text-font:'Century Gothic' , sans-serif;
 }
-
+.d-flex{
+  display: flex;
+}
+.d-spaceBetween{
+  justify-content: space-between;
+}
+.d-spaceArround{
+  justify-content: space-around;
+}
+.d-justifyCenter{
+  justify-content: center;
+}
+.d-alignItemCenter{
+  align-items: center;
+}
+.d-flexColoumn{
+  display: flex;
+  flex-direction: column;
+}
 .d-flex-coloumn{
   display: flex;
   flex-direction: column;

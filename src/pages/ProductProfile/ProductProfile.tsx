@@ -3,6 +3,7 @@ import './ProductProfile.css';
 import { useEffect, useState } from 'react';
 import FeatureCard from '../../DB/FeaturedCard';
 import PageHero from '../../components/PageHero/PageHero';
+import heroProduct from '../../assets/slide3.jpg'
 
 interface Product {
     id: number;
@@ -40,7 +41,7 @@ const ProductProfile = () => {
 
     return (
         <div className='ProductProfile'>
-            <PageHero PageName={product?.card_info_head}/>
+            <PageHero PageName={product?.card_info_head} heroImg={heroProduct} />
             <div className="ProductProfile_Container">
                 <div className="ProductProfile_Card">
                     <div className="ProductProfile_Card_collection">
